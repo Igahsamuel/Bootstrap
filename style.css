@@ -1,0 +1,114 @@
+*{
+    margin:0;
+    padding:0;
+}
+#nav-bar{
+    position: sticky;
+    top:0;
+    z-index:10;
+}
+.navbar-nav ul li a{
+    float:right;
+    text-align:center;
+}
+.navbar{
+    background-image: linear-gradient(to right, #ddd6f3, #faaca8);
+}
+#home{
+    background-image: linear-gradient(to right, #ddd6f3, #faaca8);
+}
+.webdoc{
+    padding-top:6rem;
+}
+.wave{
+    width:100%;
+}
+.title::before{
+    content:'';
+    width:150px;
+    height:5px;
+    margin-left:auto;
+    margin-right:auto;
+    background:#ddd6f3;
+    display:block;
+    transform: translateY(63px);
+}
+#contact img{
+    width:120px;
+    transition: 0.6s;
+}
+#contact a:hover img{
+    transform:translateY(40px);
+}
+.bi{
+    font-size:24px;
+    width:60px;
+    height:30px;
+}
+
+.accordion-button{
+    position: unset;
+}
+.accordion-button:focus{
+    box-shadow: none;
+}
+.bi::before{
+    font-size:50px;
+}
+.contact-us p{
+    font-size:25px;
+}
+#getstarted .bi::before{
+    font-size:30px;
+}
+.no-border{
+    box-shadow: none;
+}
+#getstarted{
+    background-image: linear-gradient(to right, #ddd6f3, #faaca8);
+}
+#about .row{
+    margin-right: calc(0.5 * var(--bs-gutter-x));
+
+}
+/* responsive mobile */
+
+@media screen and (max-width:796px){
+    .title::before{
+        display:block;
+        content:'';
+        background: #ddd6f3;
+        margin-left:auto;
+        margin-right:auto;
+        width:150px;
+        height:5px;
+        transform:translateY(50px);
+
+    }
+    .title::after{
+        content:'';
+        background:#faaca8;
+        display:block;
+        margin-left:auto;
+        margin-right:auto;
+        transform: translateY(3px);
+        width:60px;
+        height:8px;
+    }
+}
+/* for smaller screens */
+@media screen and (max-width:467px){
+    .title::before{
+        display:none;
+    }
+    .title::after{
+        content:'';
+        background:#faaca8;
+        display:none;
+        margin-left:auto;
+        margin-right:auto;
+        transform: translateY(8px);
+        width:60px;
+        height:5px;
+    }
+}
