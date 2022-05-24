@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WebDoc</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.2/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css" type="text/css">
+</head>
+<body>
+    <section id="#navbar" class="position-sticky top-0 z-index-10">
+    <nav class="navbar navbar-expand-md  navbar-light">
+        <div class="container-fluid">
+            <a href="#home" class="navbar-brand fw-bold">
+            <span class="text-warning">WEB</span>DOC   
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+
+            <!-- navlink -->
+            <div class="collapse navbar-collapse justify-content-end align-center float-right text-center" id="navbarText">
+                <ul class="navbar-nav mx-3">
+                    <li class="nav-item">
+                        <a href="index.html" class="nav-link">Home</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="about.html" class="nav-link">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="contact.html" class="nav-link">Contact</a>
+                    </li>
+                </ul>
+                <a href="getintouch.html"><button class="btn btn-outline-light" type="button">Get Started</button></a>
+            </div>
+        </div>
+    </nav>
+    </section>
+    <section id="getstarted" class="py-2">
+        <div class="container-lg ">
+            <div class="text-center">
+                <h2 class="text-center title py-5">GET STARTED</h2>
+                <p class="lead">Questions to ask? Fill out the form to contact me directly.</p>
+            </div>
+            <div class="row justify-content-center my-5">
+                <div class="col-lg-6">
+                  <label for="email" class="form-label">Email Address:</label>
+                    <div class="input-group">
+                    <span class="input-group-text"><i class="bi bi-envelope-fill"></i></span>
+                    <input type="email" class="form-control no-border" id="email" placeholder="e.g Igahsamuela2@gmail.com">
+                    <span class="tt" data-bs-placement="bottom" title="Enter an Email addree that we can reply to">
+                    <span class="input-group-text"><i class="bi bi-question-circle-fill text-muted"></i></span>
+                    </span>
+                    </div>
+                    <label for="name" class="form-label">Name:</label>
+                    <div class="input-group">
+                        <span class="input-group-text"><i class="bi bi-person-lines-fill"></i></span>
+                    <input type="text" class="form-control no-border" id="name" placeholder="e.g Dr Web">
+                    <span class="tt" data-bs-placement="bottom" title="pretty explanatory self">
+                    <span class="input-group-text"><i class="bi bi-question-circle-fill text-muted"></i></span>
+                    </div>
+                    </span>
+                    <label for="subject" class="form-label">What is your question about?</label>
+                   <div class="input-group">
+                       <span class="input-group-text"><i class="bi bi-chat-right-dots-fill"></i></span>
+                    <select id="subject" class="form-select">
+                        <option value="pricing" selected>Pricing query</option>
+                        <option value="contact">contact select</option>
+                        <option value="other query">Other Query</option>
+                    </select>
+                    </div>
+                    <div class="form-floating mt-5 mb-4">
+                    <textarea id="query" class="form-control no-border" style="height: 140px"></textarea>
+                    <label for="query">Your query...</label>
+                  </div>
+                  <div class="text-center mb-3">
+                      <button class="btn btn-outline-secondary" type="submit">Submit</button>
+                  </div>
+                  </div>
+            </div>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+    <script>
+        const tooltips = document.querySelectorAll('.tt')
+        tooltips.forEach(t=>{
+            new bootstrap.Tooltip(t)
+        })
+    </script>
+</body>
+</html>
