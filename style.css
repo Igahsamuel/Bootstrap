@@ -45,7 +45,12 @@
 }
 #about .row{
     margin-right: calc(0.5 * var(--bs-gutter-x));
-
+}
+.card-footer .bi::before{
+    font-size:24px;
+}
+#contact .card{
+    position: unset;
 }
 
 
