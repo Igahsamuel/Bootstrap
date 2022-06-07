@@ -52,5 +52,27 @@
 #contact .card{
     position: unset;
 }
-
-
+.moon{
+    position:absolute;
+    top:12%;
+    right:0;
+    left:90%;
+    bottom:0;
+}
+.card-img-top {
+    width: 100%;
+    height: 15vw;
+    object-fit: cover;
+}
+.brain img{
+        height: 73vh;
+}
+@media screen and (max-width:425px){
+    .moon{
+        position:absolute;
+        top:84%;
+        right:0;
+        left:11px;
+        bottom:0;
+    }
+}
